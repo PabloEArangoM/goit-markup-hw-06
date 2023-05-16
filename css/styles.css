@@ -290,28 +290,39 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: scale(100%);
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  transform: scale(0%);
 }
 .modal-form {
+  background-color: var(--primary-white-color);
+  opacity: 0;
+  display: block;
+  margin-top: 0em;
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 0.25s,
+  opacity cubic-bezier(0.4, 0, 0.2, 1) 0.25s;
+}
+.modal{
+  position: absolute;
+  left: 50%;
+  top: 50%;
   width: 528px;
   height: 581px;
+  transform: translate(-50%, -50%);
+  padding: 40px;
   background-color: var(--primary-white-color);
-  transform: translateY(200px);
-  opacity: 0;
-  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 0.25s,
-    opacity cubic-bezier(0.4, 0, 0.2, 1) 0.25s;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 .modal-form.is-hidden {
-  transform: translateY(0);
   opacity: 1;
 }
 .div-backdrop{
-  padding: 40px;
   line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
+  margin-bottom: 10px;
 }
 .titulo-backdrop{
   margin-bottom: 12px;
@@ -345,10 +356,52 @@ footer {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  transition: border-color var(--cubic) var(--time);
   width: 18px;
   height: 18px;
 }
+.div-svg{
+  position: relative;
+}
+.div-svg:hover{
+  fill: var(--accent-color);
+}
+.input:focus + .svg-modal {
+  fill: var(--accent-color);
+}
+.boton-modal{
+  position: absolute;
+  display: flex;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.svg-cerrar {
+  height: 11px;
+  width: 11px;
+}
+.div-backdrop-comentarios{
+  margin-bottom: 20px;
+}
+.textarea{
+  display: block;
+  resize: none;
+  margin: 0;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
 
 /* section solicite-nuestro-servicio */
 .boton {

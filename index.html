@@ -54,19 +54,56 @@
     </header>
     <main>
       <section class="backdrop is-hidden" data-backdrop>
-        <form action="" class="modal-form" data-modal>
+        <div class="modal">
+          <button type="button" class="boton-modal">
+          <svg class="svg-cerrar">
+            <use href="./images/SVG/sprite.svg#cerrar"></use>
+          </svg>
+        </button>
+        <p class="titulo-backdrop">Deje sus datos, nos contactaremos con usted</p>
+        <form action="" class="modal-form" data-modal autocomplete="off">
           <div class="div-backdrop">
-          <p class="titulo-backdrop">Deje sus datos, nos contactaremos con usted</p>
-          <label for="Nombre" class="label">
-            Nombre
-          </label>
-          <div>
-            <input type="text" name="Nombre" id="Nombre" class="input"/>
-            <svg class="svg-modal">
-              <use href="./images/SVG/sprite.svg#nombre"></use>
-            </svg>
-          </div>
-        </form>
+              <label for="Nombre" class="label">
+                Nombre
+              </label>
+              <div class="div-svg">
+                <input type="text" name="Nombre" id="Nombre" class="input"/>
+                <svg class="svg-modal">
+                  <use href="./images/SVG/sprite.svg#nombre"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="div-backdrop">
+              <label for="Telefono" class="label">
+                Telefono
+              </label>
+              <div class="div-svg">
+                <input type="text" name="Telefono" id="Telefono" class="input"/>
+                <svg class="svg-modal">
+                  <use href="./images/SVG/sprite.svg#backdrop-telefono"></use>
+                </svg>
+            </div>
+            </div>
+            <div class="div-backdrop">
+              <label for="correo" class="label">
+                Correo  
+              </label>
+              <div class="div-svg">
+                <input type="text" name="Correo" id="Correo" class="input"/>
+                <svg class="svg-modal">
+                  <use href="./images/SVG/sprite.svg#backdrop-correo"></use>
+                </svg>
+            </div>
+            </div>
+            <div class="div-backdrop-comentarios">
+              <label for="Comentarios" class="label">
+                Comentarios 
+              </label>
+              <div class="div-svg">
+                <textarea name="Comentarios" id="Comentarios" class="textarea" placeholder="Introduzca el texto""></textarea>
+              </div>
+            </div>
+            </form>
         </div>
       </section>
       <!-- SOLICITE NUESTRO SERVICIO -->
