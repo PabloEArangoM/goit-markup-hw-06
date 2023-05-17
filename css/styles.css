@@ -273,6 +273,47 @@ footer {
   border-radius: 50%;
   color: var(--primary-white-color);
 }
+.suscribase{
+  margin-left: 94px;
+  color: var(--primary-white-color);
+}
+.formulario-titulo{
+  color: var(--primary-white-color);
+}
+.footer-formulario{
+  display: flex;
+  align-items: center;
+}
+.footer-email{
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  color: var(--primary-white-color);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+.boton-footer{
+  display: flex;
+  padding: 10px 28px;
+  margin: 0 auto;
+  margin-left: 12px;
+  align-items: center;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+}
+.svg-enviar{
+  width: 24px;
+  height: 24px;
+  fill: var(--primary-white-color);
+  margin-left: 10px;
+}
 
 /* INDEX MAIN */
 
@@ -399,6 +440,32 @@ footer {
   height: 120px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.div-checkbox{
+  margin-bottom: 5px;
+}
+.terminos-label{
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-p-color);
+}
+.checkbox{
+  margin-right: 8.38px;
+}
+.boton-enviar{
+  display: flex;
+  padding: 10px 75px;
+  margin: 0 auto;
+  align-items: center;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
   border-radius: 4px;
 }
 
