@@ -134,6 +134,7 @@ h3 {
 }
 .links.active {
   color: var(--accent-color);
+  border-bottom: 4px solid #2196F3;;
 }
 .links:focus {
   background-color: var(--primary-white-color);
@@ -426,8 +427,11 @@ footer {
   cursor: pointer;
 }
 .svg-cerrar {
-  height: 11px;
-  width: 11px;
+  height: 15px;
+  width: 15px;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 .div-backdrop-comentarios{
   margin-bottom: 20px;
